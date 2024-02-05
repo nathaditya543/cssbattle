@@ -6,6 +6,8 @@ import L1_Q3 from './CSSBattleImages/L1_Q3.png'
 import L1_Q4 from './CSSBattleImages/L1_Q4.png'
 import L1_Q5 from './CSSBattleImages/L1_Q5.png'
 import L1_Q6 from './CSSBattleImages/L1_Q6.png'
+import L1_Q7 from './CSSBattleImages/L1_Q7.png'
+import L1_Q8 from './CSSBattleImages/L1_Q8.png'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from './Components/Header';
 import Img from './Components/Img';
@@ -61,13 +63,25 @@ function App() {
           />
           <Img className="questions"
             qnum={6}
+            img={L1_Q7}
+            colours={["#a0a0a0", "#fdc27a", "#bf6900", ]}
+          />
+          <Img className="questions"
+            qnum={7}
             img={L1_Q6}
             colours={["#e3e8fd", "#009879", "#a683e3", "#000000"]}
           />
+          
+          <Img className="questions"
+            qnum={8}
+            img={L1_Q8}
+            colours={["#a0a0a0", "#a16901", "#ffa500","#3d2800" ]}
+          />
+
         </>
       )}
     </>
   );
 }
 
-export default App;
+export default App;
