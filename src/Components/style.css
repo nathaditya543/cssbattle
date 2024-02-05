@@ -1,5 +1,15 @@
 @import url("../Array_Complete/Fonts/WEB/css/array.css");
 
+.qnum{
+    font-family:Array-Regular;
+    font-size:79px;
+    padding:10px;
+    padding-left:20px;
+    padding-bottom:0px; 
+    width:100vw; 
+    margin:0px; 
+}
+
 .headerContainer{
     display: flex;
     flex-wrap: wrap;
@@ -42,4 +52,15 @@
     to {
         background-position: 4500vh;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    
+
+    .headerContainer{
+        font-size: 50px;
+        height: 1000px;
+    }
+
+
 }

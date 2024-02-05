@@ -20,14 +20,14 @@ export default function Img(props) {
 
     return (
         <>
-        <h2 style={{fontFamily:"Array-Regular", fontSize:"79px",padding:"10px", paddingLeft:"20px", paddingBottom:"0px", width:"100vw", margin:"0px", backgroundColor:props.colours[0], color: calculateBrightness(props.colours[0]) ? 'white' : 'black'}}>Question {props.qnum}</h2>
+        <h2 className="qnum" style={{backgroundColor:props.colours[0], color: calculateBrightness(props.colours[0]) ? 'white' : 'black'}}>Question {props.qnum}</h2>
         <div style={{backgroundColor: props.colours[0], height:"850px",width:"100vw",display: "flex", justifyContent:"center"}}>
             
-            <div style={{alignSelf:"center", justifySelf:"center"}}>
+            <div className="image" style={{alignSelf:"center", justifySelf:"center"}}>
                 <img src={props.img} style={{margin:"10px"}} alt = "Design It!"/>         
             </div>
 
-            <div style={{backgroundColor:calculateBrightness(props.colours[0]) ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)', justifySelf:"end", alignSelf:"center", padding:"10px", borderRadius:"8px", display:"flex", flexWrap:"wrap", gap:"10px"}}>{
+            <div className='btnGroup' style={{backgroundColor:calculateBrightness(props.colours[0]) ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)', justifySelf:"end", alignSelf:"center", padding:"10px", borderRadius:"8px", display:"flex", flexWrap:"wrap", gap:"10px"}}>{
                 props.colours.map((ele)=>{
                     return <Button onClick={() => CopyToClipboard(ele)} style={{backgroundColor:ele, color: calculateBrightness(ele) ? 'white' : 'black', border:"none"}}>{ele}</Button>
                 })
