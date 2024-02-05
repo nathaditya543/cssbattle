@@ -39,7 +39,7 @@ function App() {
           <Img className="questions"
             qnum={1}
             img={L1_Q1}
-            colours={["#189062", "#610E0E", "#DADA1F"]}
+            colours={["#189062", "#610E0E", "#DADA1F", "#db7093"]}
           />
           <Img className="questions"
             qnum={2}
@@ -69,13 +69,13 @@ function App() {
           <Img className="questions"
             qnum={7}
             img={L1_Q6}
-            colours={["#e3e8fd", "#009879", "#a683e3", "#000000"]}
+            colours={["#e3e8fd", "#009879", "#a683e3", "#000000", "#FFFFFF"]}
           />
           
           <Img className="questions"
             qnum={8}
             img={L1_Q8}
-            colours={["#a0a0a0", "#a16901", "#ffa500","#3d2800" ]}
+            colours={["#a0a0a0", "#a16901", "#ffa500","#3d2800", "#FFFFFF" ]}
           />
 
         </>
