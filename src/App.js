@@ -41,14 +41,14 @@ function App() {
             colours={["#ABDBE3", "#e28743", "#1e81b0"]}
           />
           <Vid className="questions"
-            qnum={2}
+            qnum={2} 
             video={L2_Q2}
             colours={["#48466D", "#3D84A8","#46CDCF","#ABEDD8"]}
           />
           <Vid className="questions"
             qnum={3}
             video={L2_Q3}
-            colours={["#F4F4F4", "#3498db", "#00FF00"]}
+            colours={["#F4F4F4", "#3498db", "#088404"]}
           />
           <Vid className="questions"
             qnum={4}
