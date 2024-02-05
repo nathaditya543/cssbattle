@@ -1,15 +1,12 @@
 import React from 'react';
 import "./App.css"
-import L2_Q1 from './CSSBattleImages/L2_Q1.mkv'
-import L2_Q2 from './CSSBattleImages/L2_Q2.mkv'
-import L2_Q3 from './CSSBattleImages/L2_Q3.mkv'
-import L2_Q4 from './CSSBattleImages/L2_Q4.mkv'
-import L2_Q5 from './CSSBattleImages/L2_Q5.mkv'
-import L2_Q6 from './CSSBattleImages/L2_Q6.mkv'
-
+import L3_Q1 from './CSSBattleImages/L3_Q1.mp4'
+import L3_Q2 from './CSSBattleImages/L3_Q2.png'
+import L3_Q3 from './CSSBattleImages/L3_Q3.png'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from './Components/Header';
 import Vid from './Components/Vid';
+import Img from './Components/Img';
 
 function App() {
   // Add state to manage screen width
@@ -32,38 +29,60 @@ function App() {
   return (
     <>
       <Header className="showAtSmall" />
-      
+
       {screenWidth > 768 && (
         <>
-          <Vid className="questions"
+          <Vid className="questions special"
             qnum={1}
-            video={L2_Q1}
-            colours={["#ABDBE3", "#e28743", "#1e81b0"]}
+            video={L3_Q1}
+            colours={["#8EE4D6", "#1F3735", "#3D6F6A"]}
           />
-          <Vid className="questions"
-            qnum={2} 
-            video={L2_Q2}
-            colours={["#48466D", "#3D84A8","#46CDCF","#ABEDD8"]}
+          <Img className="questions"
+            qnum={2}
+            img={L3_Q2}
+            colours={["#CCCCCC", "#FF0000"]}
           />
-          <Vid className="questions"
+          <Img className="questions"
             qnum={3}
-            video={L2_Q3}
-            colours={["#F4F4F4", "#3498db", "#088404"]}
-          />
-          <Vid className="questions"
-            qnum={4}
-            video={L2_Q4}
-            colours={["#FFBFCB","#FF0000" ]}
-          />
-          <Vid className="questions"
-            qnum={5}
-            video={L2_Q5}
-            colours={["#FFFFFF", "#000000", "#4CAF50"]}
-          />
-          <Vid className="questions"
-            qnum={6}
-            video={L2_Q6}
-            colours={["#78b5c5", "#ffa500"  ]}
+            img={L3_Q3}
+            colours={[
+                "#000000",
+                "#f1f1f1",
+                "#8f9297",
+                "#4e4e4e",
+                "#1f1f1f",
+                "#151515",
+                "#383838",
+                "#494949",
+                "#161616",
+                "#424242",
+                "#060606",
+                "#3e3c3f",
+                "#1e1e1e",
+                "#82a1bd",
+                "#4d6684",
+                "#425a74",
+                "#657d99",
+                "#1e2f3f",
+                "#374858",
+                "#43536d",
+                "#253141",
+                "#4f6479",
+                "#3a4153",
+                "#7db9e8",
+                "#f0f0f0",
+                "#aab3ba",
+                "#131416",
+                "#3a4b5d",
+                "#37485a",
+                "#2b3b4b",
+                "#303f54",
+                "#92a4b8",
+                "#849fb0",
+                "#b9c3cf",
+                "#c1d0e3"
+
+            ]}
           />
 
         </>
@@ -72,4 +91,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;

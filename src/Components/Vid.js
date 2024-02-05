@@ -24,7 +24,7 @@ export default function Vid(props) {
         <div style={{backgroundColor: props.colours[0], height:"840px",width:"100vw",display: "flex", justifyContent:"center"}}>
             
             <div style={{alignSelf:"center", justifySelf:"center"}}>
-                <video controls autoPlay loop muted style={{transform:"scale(0.5)"}}>
+                <video controls autoPlay loop muted style={{transform:"scale(0.5)",height:"500px",width:"600px",objectFit:"contain"}}>
                     <source src={props.video}/>
                 </video>          
             </div>
