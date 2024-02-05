@@ -1,16 +1,15 @@
 import React from 'react';
 import "./App.css"
-import L1_Q1 from './CSSBattleImages/L1_Q1.png'
-import L1_Q2 from './CSSBattleImages/L1_Q2.png'
-import L1_Q3 from './CSSBattleImages/L1_Q3.png'
-import L1_Q4 from './CSSBattleImages/L1_Q4.png'
-import L1_Q5 from './CSSBattleImages/L1_Q5.png'
-import L1_Q6 from './CSSBattleImages/L1_Q6.png'
-import L1_Q7 from './CSSBattleImages/L1_Q7.png'
-import L1_Q8 from './CSSBattleImages/L1_Q8.png'
+import L2_Q1 from './CSSBattleImages/L2_Q1.mkv'
+import L2_Q2 from './CSSBattleImages/L2_Q2.mkv'
+import L2_Q3 from './CSSBattleImages/L2_Q3.mkv'
+import L2_Q4 from './CSSBattleImages/L2_Q4.mkv'
+import L2_Q5 from './CSSBattleImages/L2_Q5.mkv'
+import L2_Q6 from './CSSBattleImages/L2_Q6.mkv'
+
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from './Components/Header';
-import Img from './Components/Img';
+import Vid from './Components/Vid';
 
 function App() {
   // Add state to manage screen width
@@ -36,46 +35,35 @@ function App() {
       
       {screenWidth > 768 && (
         <>
-          <Img className="questions"
+          <Vid className="questions"
             qnum={1}
-            img={L1_Q1}
-            colours={["#189062", "#610E0E", "#DADA1F", "#db7093"]}
+            video={L2_Q1}
+            colours={["#ABDBE3", "#e28743", "#1e81b0"]}
           />
-          <Img className="questions"
+          <Vid className="questions"
             qnum={2}
-            img={L1_Q2}
-            colours={["#3ca48c", "#97510b", "#8a3108", "#fdbc5f"]}
+            video={L2_Q2}
+            colours={["#48466D", "#3D84A8","#46CDCF","#ABEDD8"]}
           />
-          <Img className="questions"
+          <Vid className="questions"
             qnum={3}
-            img={L1_Q3}
-            colours={["#87ceeb", "#a42a2a", "#ffffff"]}
+            video={L2_Q3}
+            colours={["#F4F4F4", "#3498db", "#00FF00"]}
           />
-          <Img className="questions"
+          <Vid className="questions"
             qnum={4}
-            img={L1_Q4}
-            colours={["#abdbe3", "#000000"]}
+            video={L2_Q4}
+            colours={["#FFBFCB","#FF0000" ]}
           />
-          <Img className="questions"
+          <Vid className="questions"
             qnum={5}
-            img={L1_Q5}
-            colours={["#a9a9a9", "#000000", "#ffffff"]}
+            video={L2_Q5}
+            colours={["#FFFFFF", "#000000", "#4CAF50"]}
           />
-          <Img className="questions"
+          <Vid className="questions"
             qnum={6}
-            img={L1_Q7}
-            colours={["#a0a0a0", "#fdc27a", "#bf6900", ]}
-          />
-          <Img className="questions"
-            qnum={7}
-            img={L1_Q6}
-            colours={["#e3e8fd", "#009879", "#a683e3", "#000000", "#FFFFFF"]}
-          />
-          
-          <Img className="questions"
-            qnum={8}
-            img={L1_Q8}
-            colours={["#a0a0a0", "#a16901", "#ffa500","#3d2800", "#FFFFFF" ]}
+            video={L2_Q6}
+            colours={["#78b5c5", "#ffa500"  ]}
           />
 
         </>

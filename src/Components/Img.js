@@ -24,7 +24,7 @@ export default function Img(props) {
         <div style={{backgroundColor: props.colours[0], height:"850px",width:"100vw",display: "flex", justifyContent:"center"}}>
             
             <div className="image" style={{alignSelf:"center", justifySelf:"center"}}>
-                <img src={props.img} style={{margin:"10px", height:"500px", width: "500px", objectFit: "contain"}} alt = "Design It!"/>         
+                <img src={props.img} style={{margin:"10px", height:"500px", width: "500px", objectFit: "containff"}} alt = "Design It!"/>         
             </div>
 
             <div className='btnGroup' style={{backgroundColor:calculateBrightness(props.colours[0]) ? 'rgba(255,255,255,0.3)' : 'rgba(0,0,0,0.3)', justifySelf:"end", alignSelf:"center", padding:"10px", borderRadius:"8px", display:"flex", flexWrap:"wrap", gap:"10px"}}>{
